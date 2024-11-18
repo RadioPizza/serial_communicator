@@ -4,8 +4,7 @@ import time
 from typing import Optional
 from serial.tools import list_ports
 
-# Настройка уровня логирования (можно настроить извне)
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 class SerialCommunicator:
     def __init__(self, port: str, baudrate: int = 9600, timeout: int = 3000):
