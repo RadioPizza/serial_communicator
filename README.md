@@ -178,7 +178,7 @@ try:
 except serial.SerialException as e:
     print(f"Ошибка при работе с последовательным портом: {e}")
 ```
-<a id="chapter-5"></a>
+<a id="chapter-4"></a>
 
 ## Дополнительные советы
 
@@ -204,13 +204,13 @@ import logging
 logging.basicConfig(level=logging.INFO) #
 ```
 
-<a id="chapter-6"></a>
+<a id="chapter-5"></a>
 
 ## Тестирование
 
 Для проверки и демонстрации работы модуля `Serial Communicator` в репозитории предусмотрен мок-контроллер, имитирующий поведение реального устройства. Он расположен в папке `ControllerMock` и представлен скетчем Arduino — `ControllerMock.ino`. С его помощью вы сможете протестировать функции модуля.
 
-<a id="chapter-7"></a>
+<a id="chapter-6"></a>
 
 ## Обратная связь
 
