@@ -6,7 +6,7 @@ setup(
     author='Oleg Kravtsov',
     author_email='kravtsov.oleg@vk.com',
     description='Модуль для взаимодействия с устройствами через последовательный порт.',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/RadioPizza/serial_communicator',
     license='MIT',
