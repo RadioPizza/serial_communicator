@@ -197,31 +197,3 @@ class SerialCommunicator:
             logging.error("Произошла ошибка при проверке порта %s: %s", port, e)
 
         return False
-
-# Примеры использования
-if __name__ == "__main__":
-    baudrate = 115200
-    port = 'COM3'
-
-    # Пытаемся найти контроллер автоматически
-    port = SerialCommunicator.find_controller_port()
-
-    # Создаем экземпляр SerialCommunicator
-    communicator = SerialCommunicator(port=port, baudrate=baudrate, timeout=2.0)
-
-    # Пример отправки команды без ожидания ответа
-    communicator.send_command('p76')
-    
-    # Пример отправки команды с проверкой ожидаемого ответа
-    if communicator.send_command('S', expected_response='S'):
-        print("**Команда 'S' выполнена успешно.**")
-    else:
-        print("**Не удалось выполнить команду 'S'.**")
-
-    # Закрытие последовательного порта и удаление экземпляра
-    communicator.close()
-    del communicator
-
-    # Использование контекстного менеджера
-    with SerialCommunicator(port=SerialCommunicator.find_controller_port(), baudrate=115200) as communicator:
-        communicator.send_command('s')
