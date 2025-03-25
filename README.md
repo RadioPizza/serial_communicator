@@ -1,4 +1,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI Version](https://img.shields.io/pypi/v/serial-communicator)](https://pypi.org/project/serial-communicator/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/serial-communicator)](https://pypi.org/project/serial-communicator/)
+[![Downloads](https://img.shields.io/pypi/dm/serial-communicator)](https://pypi.org/project/serial-communicator/)
 
 # Serial Communicator
 
