@@ -204,7 +204,7 @@ for port in ports:
 ```Python
 import logging
 
-logging.basicConfig(level=logging.INFO) #
+logging.basicConfig(level=logging.INFO)
 ```
 
 <a id="chapter-5"></a>
