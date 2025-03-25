@@ -1,4 +1,4 @@
-[![MIT License][license-shield]][license-url]
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 # Serial Communicator
 
